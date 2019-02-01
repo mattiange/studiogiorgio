@@ -1,0 +1,80 @@
+#slideshow{
+    border: 0px solid;
+    width: 80%;
+    margin: 0 auto;
+}
+#slideshow .row{
+    margin: 0;
+    border: 1px solid;
+    margin-bottom: 15px;
+    -webkit-border-radius: 20px 20px 0 0;
+    -moz-border-radius: 20px 20px 0 0;
+    border-radius: 20px 20px 0 0;
+    /*padding: 10px;*/
+}
+#slideshow .row .immagine{
+    margin-right: 15px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+#slideshow .row .immagine,
+#slideshow .row .immagine img{
+    max-width: 350px;
+    max-height: 200px;
+}
+#slideshow .strumenti{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#slideshow .strumenti .ico{
+    width: 32px;
+    height: 32px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    background-color: transparent;
+    margin-right: 10px;
+}
+#slideshow .strumenti .ico:last-child{
+    margin-right: 0;
+}
+#slideshow .strumenti .ico-aggiungi{
+    background-image: url(../ico/png/32x32/add32x32.png);
+}
+#slideshow .strumenti .ico-salva{
+    background-image: url(../ico/png/32x32/checked32x32.png);
+}
+#slideshow .strumenti .ico-cancella{
+    background-image: url(../ico/png/32x32/delete32x32.png);
+}
+#slideshow .row > div{
+    width: 100%;
+}
+#slideshow .row > div [type="number"]{
+    width: 80px;
+}
+#slideshow .row.item > div{
+    width: 400px;
+}
+#slideshow .row.item > div:first-child{
+    width: 100%;
+}
+#slideshow form .row > div > div{
+    margin: 10px;
+}
+#slideshow form > div .strumenti{
+    border-bottom: 1px solid #eeeeee;
+    margin: 0 !important;
+    margin-bottom: 10px !important;
+    padding: 5px;
+    margin: 0;
+    width: 100%;
+    -webkit-border-radius: 20px 20px 0 0;
+    -moz-border-radius: 20px 20px 0 0;
+    border-radius: 20px 20px 0 0;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#eeeeee+0,eeeeee+100;Grey+Flat */
+    background: #eeeeee; /* Old browsers */
+    background: -moz-linear-gradient(top, #eeeeee 0%, #eeeeee 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #eeeeee 0%,#eeeeee 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #eeeeee 0%,#eeeeee 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#eeeeee',GradientType=0 ); /* IE6-9 */
+}

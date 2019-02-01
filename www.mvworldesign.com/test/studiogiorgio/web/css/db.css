@@ -1,0 +1,51 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 7-giu-2018, 13.42.08
+    Author     : mattia
+*/
+.categorie-create, .categorie-index, .categorie-view, .categorie-update, .page{
+    width: 80%;
+    margin: 0 auto;
+}
+.categorie-create input, .page input{
+    border-radius: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+}
+.cat-ico{
+    width: 70px;
+}
+.cat-ico img{
+    max-width: 50px;
+    height: auto;
+}
+form{
+    overflow: hidden;
+    margin: 10px;
+    margin-top: 25px;
+}
+form .admin-editor, form .admin-options{
+    float: left;
+}
+form .admin-options{margin-left: 20px;margin-top: 30px;}
+form .admin-options .picture img{width: 100%;}
+form .btn{margin-bottom: 10px !important;}
+form label{
+    text-transform: uppercase;
+}
+.admin-table{width: 1170px;margin:0 auto;}
+
+
+@media (min-width: 768px){
+.admin-table{width: 750px;}
+}
+@media (min-width: 992px){
+.admin-table{width: 970px;}
+}
+@media (min-width:1200px){
+.admin-table{width: 1170px;}    
+}

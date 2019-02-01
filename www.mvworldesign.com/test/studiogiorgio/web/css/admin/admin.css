@@ -1,0 +1,21 @@
+/* 
+    Created on : 30-nov-2018, 15.03.53
+    Author     : Mattia Leonardo Angelillo
+*/
+.info{
+    margin-top: 50px;
+}
+#adminmainmenu{
+    position: fixed;
+    margin: 0;
+    top: 0;
+}
+#adminmainmenu, #adminmenuwrap{height: 50px;}
+#adminmainmenu, #adminmainmenu .submenu, #adminmainmenu .container{
+    width: 100%;
+    background-color: #f6c425;
+}
+#adminmainmenu .navbar{border: 0;}
+#adminmenu .navbar-nav, #adminmainmenu .container li{margin: 0;}
+#adminmenu a{color:#000;}
+#adminmenu a:hover{color:#000080;text-decoration: underline;}

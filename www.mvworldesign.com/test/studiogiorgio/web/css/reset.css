@@ -1,0 +1,64 @@
+@font-face{
+    font-family: Cookie;
+    src: url(../fonts/Cookie/Cookie-Regular.ttf);
+}
+
+
+
+html, *{margin: 0;padding: 0;border: none;outline: 0;}
+*{box-sizing:border-box;color: #8997a7;font-family: Sans-Serif !important;}
+a:hover, a:focus, a:visited{text-decoration: none; outline: none;}
+a{
+    /*color: #f6c425;*/
+    color: #d19f00;
+}
+ol, ul{margin-top: 0;margin-bottom: 10px;}
+ul, li{list-style: none;}
+.container ul, .container ol, .container li{list-style: square;}
+.container li{margin-left: 35px;}
+body{
+    font-family: 'HelveticaCE-Regular',Arial;
+    font-size: 15px;
+    color: #2d2d2d;
+    line-height: 1.5em;
+    font-weight: 400;
+    background: #ffffff;
+    -webkit-font-smoothing: antialiased;
+}
+h1, h2, h3, h4, h5, h6 {
+    position: relative;
+    font-family: 'Museo',serif;
+    font-weight: normal;
+    margin: 0px;
+    background: none;
+}
+h1{
+    position: inherit;
+    text-align: center;
+    color: rgb(222, 189, 6);
+    font-size: 5em;
+}
+h2{
+    color: rgb(127, 108, 3);
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: Cookie !important;
+}
+:after, :before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+p{
+    font-size: 16px;
+    color: #8997a7;
+    line-height: 2em;
+}
+section{overflow: hidden;}
+.none{display: none;}
+.mce-ico{
+    font-family: 'tinymce', Arial !important;
+}
+.glyphicon{
+    font-family: 'Glyphicons Halflings' !important;
+}

@@ -1,0 +1,131 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 3-giu-2018, 14.00.45
+    Author     : mattia
+*/
+body {
+    margin: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    color: #333;
+    background-color: #fff;
+}
+.view-login{
+    background-color: #17568c;
+    padding-top: 0;
+}
+.view-login .container {
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -206px;
+    margin-left: -150px;
+    margin-right: auto;
+}
+#login-form{
+    margin-bottom: 15px;
+}
+.view-login .well{
+    padding-bottom: 0;
+}
+.form-group{
+    max-width: 100%;
+    margin: 0 !important;
+}
+label{
+    display: none;
+}
+input{
+    border-radius: 0 !important;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.btn-group{
+    display: block;
+}
+.system-message-container{
+    padding: 0 0 0 5px;
+    min-height: 0;
+}
+.well{
+    min-height: 20px;
+    padding: 19px;
+    margin-bottom: 20px;
+    background-color: #F0F0F0;
+    border: 1px solid #F0F0F0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+}
+hr{
+    margin: 18px 0;
+    border: 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #fff;
+}
+.container:before, .container:after{
+    display: table;
+    content: "";
+    line-height: 0;
+}
+
+.view-login .navbar-fixed-bottom, .view-login .navbar-fixed-bottom a{
+    color: #fcfcfc;
+}
+a:hover, a:active, a:focus{
+    outline: none;
+}
+a:hover, a:focus{
+    color: #1f496e;
+    text-decoration: underline;
+}
+[class^="icon-"], [class*=" icon-"] {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin-right: .25em;
+    line-height: 14px;
+}
+.icon-out-2:before, .icon-new-tab:before {
+    content: "\e024";
+}
+[class^="icon-"]:before, [class*=" icon-"]:before {
+    font-family: 'IcoMoon';
+    font-style: normal;
+    speak: none;
+}
+p{
+    color: #fff !important;
+}
+.has-error .help-block{
+    color: #a94442 !important;
+    font-size: 0.8em;
+}
+
+@media (min-width: 768px){
+    body{
+        padding-top: 30px;
+    }
+}
+@media (min-width: 1200px){
+    .container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
+        width: 1170px;
+    }
+}
+
+
+
