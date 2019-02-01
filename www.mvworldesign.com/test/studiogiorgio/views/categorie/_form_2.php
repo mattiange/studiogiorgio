@@ -24,7 +24,7 @@ use yii\widgets\ActiveForm;
     
     <?= $form->field($model, 'immagine_categoria')->fileInput() ?>
 
-    <?= $form->field($model, 'intro_text')->textInput() ?>
+    <?= $form->field($model, 'intro_text')->textInput(['class'=>'countable form-control']) ?>
 
     <?= $form->field($model, 'descrizione')->textarea(['rows' => 6, 'class' => 'editor']) ?>
 
@@ -67,12 +67,26 @@ use yii\widgets\ActiveForm;
                   '//fonts.googleapis.com/css?family=Lato:300,300i,400,400i',
                   '//www.tinymce.com/css/codepen.min.css']
             });
+        
+        $('.countable').jqEasyCounter({
+			'maxChars': 255,
+			'maxCharsWarning': 40,
+			'msgFontSize': '12px',
+			'msgFontColor': '#000',
+			'msgFontFamily': 'Verdana',
+			'msgTextAlign': 'left',
+			'msgWarningColor': '#f1f1f1',
+			'msgAppendMethod': 'insertBefore'				
+		});
     });
 JS;
 $this->registerJsFile('@web/js/jquery.tinymce.min.js', 
         ['depends' => [\yii\web\JqueryAsset::className()]
 ]);
 $this->registerJsFile('@web/js/tinymce.min.js', 
+        ['depends' => [\yii\web\JqueryAsset::className()]
+]);
+$this->registerJsFile('@web/js/jquery.jqEasyCounter.js', 
         ['depends' => [\yii\web\JqueryAsset::className()]
 ]);
 $this->registerJs($script, yii\web\View::POS_END);

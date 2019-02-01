@@ -26,10 +26,24 @@ $this->title = "Categorie";
                         </a>
                     </h3>
 
-                    <div class="content"><?= $cat->intro_text ?></div>
+                    <div class="content"><textarea readonly="readonly"
+                            class="countWords"
+                            data-max-length="255"
+                            style="width: 100%;height: 100%;overflow: hidden;resize: none;"><?= ($cat->intro_text==""?$cat->descrizione:$cat->intro_text) ?></textarea></div>
                 </div>
                 <?php endforeach; ?>
             </div>
         </div>
     </section>
 </div>
+
+<?php
+$script = <<< JS
+    jQuery(document).ready(function(){
+        jQuery(".countWords").counterWords({});
+    });
+JS;
+$this->registerJsFile('@web/js/jquery.counterWords.js', 
+        ['depends' => [\yii\web\JqueryAsset::className()]
+]);
+$this->registerJs($script, yii\web\View::POS_END);
